@@ -22,47 +22,62 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
+  <body ng-app="PartnerTimeApp">
+    <ion-side-menus>
 
-    <ion-pane>
-      <ion-header-bar align-title="left" class="bar-positive">
-        <h4 class="title">PartnerTime
-        </h4>
-        <h6>Take a break and have a talk.</h6>
-      </ion-header-bar>
-      <ion-content>
-        <div class="row">
-          <div class="col col-5"></div>
-          <div class="col col-90">
+      <ion-side-menu side="right">
+        <h1>Side Menu</h1>
+      </ion-side-menu>
 
-            <div class="card">
-              <div class="item item-divider">
-                <h3>Nr. der Frage / Titel der Frage </h3>
-              </div>
-              <div class="item item-text-wrap">
-                <h6> Das ist Breadcrumb mit Links => Kategorie </h6>
-                <h3> Das is die Frage</h3>
-              </div>
-              <div class="item item-divider">
-                <div class="row">
-                  <div class="col col-30">
-                    <button class="button button-dark">Previous</button>
-                  </div>
-                  <div class="col col-30">
-                    <button class="button button-blanced"><i class="icon ion-navicon-round"</button>
-                  </div>
-                  <div class="col col-30"></div>
-                    <button class="button button-dark">Next</button>
-                </div>
-              </div>
-            </div>
-
+      <ion-side-menu-content>
+        <ion-nav-view>
+          <div class="bar bar-header" alignt-title="left">
+          <button menu-toggle = "left" class = "button button-icon icon ion-navicon" ng-click="toggleLeft">
           </div>
-          <div class="col col-5"></div>
+      </button>
+        </ion-nav-view>
+        <!--<ion-header-bar align-title="left" class="bar-positive">
+          <h4 class="title">PartnerTime</h4>
+          <button class="button icon ion-navicon"></button>
+        </ion-header-bar>-->
+      </ion-side-menu-content>
+    </ion-side-menus>
 
+    <!--  </ion-side-menu>
+    <ion-header-bar align-title="left" class="bar-positive">
+      <h4 class="title">PartnerTime</h4>
+      <button class="button icon ion-navicon"></button>
+    </ion-header-bar>
+    <ion-content>
+
+      <div class="card">
+        <div class="item item-divider">
+          <h3>Nr. der Frage / Titel der Frage
+          </h3>
         </div>
 
-      </ion-content>
-    </ion-pane>
+        <div class="item item-text-wrap">
+          <h6>
+            Das ist Breadcrumb mit Links => Kategorie
+          </h6>
+          <h3>
+            Das is die Frage</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </ion-content>
+
+  <div class="bar bar-footer bar-positive">
+    <div class="title">
+      <div class="button-bar">
+        <a class="button  icon-left ion-chevron-left button-clear">Back</a>
+        <a class="button  icon-right ion-chevron-right button-clear">Next</a>
+      </div>
+    </div>
+  </div>-->
+
   </body>
 </html>
